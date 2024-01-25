@@ -16,6 +16,11 @@ go run notifications.go
 
 This will start a web server listening on port 8080. You can send notifications to the server using the API described below.
 
+### Configuration
+
+Notice that the teams notifier requires a valid webhook URL. Currently this is hard coded into the constructor, both in notifications.go and in the tests. You can change this to your own webhook URL if you want to test the teams notifier.
+This will be moved to a configuration / env file in the future.
+
 ## Testing
 
 To run the tests, you can use the following command:
